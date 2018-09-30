@@ -1,1 +1,1 @@
-# rsoi
+# rsoi_kruto
