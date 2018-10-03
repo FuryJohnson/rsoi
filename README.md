@@ -6,7 +6,7 @@
 * [myenv](https://pypi.org/project/myenv/)
 
 
-##Start project  
+#Start project  
 
 ```
 python project/manage.py flush
@@ -20,9 +20,9 @@ python project/manage.py runserver
 then - add to adress input - /api/ 
 ```
 
-##Tests
+#Tests
 ```
 python project/test .
 ```
 
-##Enjoy!
+#Enjoy!
