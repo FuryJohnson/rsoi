@@ -1,12 +1,17 @@
 from rest_framework import serializers
-from .models import University, Student
+from apps.core.models import University, Student, Faculty
 
 class UniversitySerializer(serializers.ModelSerializer):
     class Meta:
-        model = University
         fields = '__all__'
+        model = University
 
 class StudentSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Student
         fields = '__all__'
+        model = Student
+
+class FacultySerializer(serializers.ModelSerializer):
+    class Meta:
+        fields = '__all__'
+        model = Faculty
