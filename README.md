@@ -1,6 +1,6 @@
 # My Django Rest API for RSOI by Igor Borzunov IU7-11M
 
-## Используемые инструменты
+## Ihave used some services:
 * [Python 3.7](https://www.python.org/download/releases/3.0/)
 * [Django](http://www.django-rest-framework.org)
 * [myenv](https://pypi.org/project/myenv/)
