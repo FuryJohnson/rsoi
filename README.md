@@ -1,9 +1,13 @@
 # My Django Rest API for RSOI by Igor Borzunov IU7-11M
 
-## Ihave used some services:
+## Used some services:
 * [Python 3.7](https://www.python.org/download/releases/3.0/)
 * [Django](http://www.django-rest-framework.org)
 * [myenv](https://pypi.org/project/myenv/)
+* [Vue](https://vuejs.org)
+* [Bootstrap + Vue](https://bootstrap-vue.js.org)
+
+
 
 
 Start project  
