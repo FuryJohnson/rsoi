@@ -123,6 +123,7 @@
 
 <script>
   import { required, minLength } from 'vuelidate/lib/validators'
+  import axios from 'axios';
 
   export default {
     data() {
@@ -132,20 +133,28 @@
         faculty: ''
       }
     },
-    validations:{
+    validations: {
       name: {
-        required:required,
+        required: required,
         minLength: minLength(4)
       },
       univercity: {
-        required:required,
+        required: required,
         minLength: minLength(4)
       },
       faculty: {
-        required:required,
+        required: required,
         minLength: minLength(1)
       },
-    }
+    },
+    methods: {
+      FetchData: function () {
+        var app = this;
+        axios.get("/students/").then(response => {
+          app.names = response.data.names;
+        });
+      },
+    },
   }
 </script>
 
