@@ -20,6 +20,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 
 # Application definition
 
@@ -49,17 +51,14 @@ MIDDLEWARE_CLASSES = [
 ]
 
 CORS_ORIGIN_ALLOW_ALL = False
-try:
-    from local_settings import *
-except ImportError:
-    pass
+
 ROOT_URLCONF = 'urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.normpath(os.path.join(BASE_DIR, 'apps/frontend')),
+            os.path.normpath(os.path.join(BASE_DIR, 'apps/frontend/dist')),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -75,6 +74,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'wsgi.application'
 
@@ -133,9 +133,9 @@ STATIC_ROOT = os.path.join(ROOT_DIR, 'assets')
 
 # See:
 # https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/#std:setting-STATICFILES_DIRS
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'apps/frontend/static'),
-)
+STATICFILES_DIRS = [
+  os.path.join(BASE_DIR, 'apps/frontend/dist/static'),
+]
 
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
@@ -197,3 +197,9 @@ LOGGING = {
         },
     }
 }
+
+
+try:
+    from local_settings import *
+except ImportError:
+    pass
