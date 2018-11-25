@@ -32,6 +32,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'apps.core',
+    'apps.frontend',
+    'corsheaders',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -43,15 +45,21 @@ MIDDLEWARE_CLASSES = [
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
+CORS_ORIGIN_ALLOW_ALL = False
+try:
+    from local_settings import *
+except ImportError:
+    pass
 ROOT_URLCONF = 'urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.normpath(os.path.join(BASE_DIR, 'templates')),
+            os.path.normpath(os.path.join(BASE_DIR, 'apps/frontend')),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -126,7 +134,7 @@ STATIC_ROOT = os.path.join(ROOT_DIR, 'assets')
 # See:
 # https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/#std:setting-STATICFILES_DIRS
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'apps/frontend/static'),
 )
 
 STATICFILES_FINDERS = (
