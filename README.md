@@ -28,5 +28,3 @@ Tests
 ```
 python project/test .
 ```
-
-Enjoy!
