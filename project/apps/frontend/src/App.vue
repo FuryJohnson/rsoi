@@ -1,11 +1,12 @@
 <template>
   <div class="container">
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
-      <strong>Ошибка 520</strong> Ошибка сделано специально и без вреда для приложения, закройте алерт :)
+      <strong>Ошибка 520</strong> Ошибка сделано специально и без вреда для приложения, закройте алерт.
       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
+    {{ result }}
     <form class="pt-3">
       <div class="form-group">
         <label for ="student name">Student Name</label>
@@ -17,8 +18,8 @@
           @input="$v.name.$touch()"
           v-model="name"
         >
-        <div class="invalid-feedback" v-if="!$v.name.minLength">Имя студента должно быть больше четырёх символов</div>
-        <button class="btn btn-primary" type="submit">Найти</button>
+        <div class="invalid-feedback" v-if="!$v.name.minLength">Имя студента должно быть больше одного символа</div>
+        <button class="btn btn-primary" @click="FetchData">Найти</button>
       </div>
       <div class="form-group">
       <label for ="univercity">Univercity</label>
@@ -31,7 +32,7 @@
         v-model="univercity"
       >
       <div class="invalid-feedback" v-if="!$v.univercity.minLength">Имя университета должно быть больше четырёх символов</div>
-        <button class="btn btn-primary" type="submit">Найти</button>
+        <button class="btn btn-primary" type="submit"@click="FetchData">Найти</button>
 
         <div class="form-group">
         <label for ="faculty">Faculty</label>
@@ -123,27 +124,53 @@
 
 <script>
   import { required, minLength } from 'vuelidate/lib/validators'
+  import axios from 'axios';
   export default {
     data() {
       return {
-        name: '',
+        result: '',
         univercity: '',
         faculty: ''
       }
     },
-    validations:{
+    validations: {
       name: {
-        required:required,
-        minLength: minLength(4)
+        required: required,
+        minLength: minLength(2)
       },
       univercity: {
-        required:required,
+        required: required,
         minLength: minLength(4)
       },
       faculty: {
-        required:required,
+        required: required,
         minLength: minLength(1)
       },
+    },
+    mounted: function () {
+      this.FetchData();
+    },
+    methods: {
+      FetchData: function () {
+        var app = this;
+        axios.get("http://127.0.0.1:8000/api/students/").then(response => {
+          console.log(response)
+          this.result = response.data[0].first_name + response.data[0].last_name
+          app.name = response.data.name;
+        });
+        var app = this;
+        axios.get("http://127.0.0.1:8000/api/univercity/").then(response => {
+          console.log(response)
+          this.result = response.data[0].univercity
+          app.name = response.data.univercity;
+        });
+        var app = this;
+        axios.get("http://127.0.0.1:8000/api/faculty/").then(response => {
+          console.log(response)
+          this.result = response.data[0].faculty
+          app.name = response.data.faculty;
+        });
+      }
     }
   }
 </script>
