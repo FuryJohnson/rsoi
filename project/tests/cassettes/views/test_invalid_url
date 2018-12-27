@@ -1,0 +1,28 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.20.1]
+    method: GET
+    uri: http://127.0.0.1:8010/api/v1/scrapetest/?text_to_find=Building&url=lkjlkj;lkaj.sdf
+  response:
+    body: {string: '{"id":192,"results":[{"id":539,"loader":"selenium","status_code":null,"text_in_response":false,"response":null,"timestamp":"2018-11-21T06:04:46.773748Z","error":"Message:
+        unknown error: unhandled inspector error: {\"code\":-32000,\"message\":\"Cannot
+        navigate to invalid URL\"}\n  (Session info: headless chrome=70.0.3538.110)\n  (Driver
+        info: chromedriver=2.42.591071 (0b695ff80972cc1a65a5cd643186d2ae582cd4ac),platform=Linux
+        4.15.0-39-generic x86_64)\n","search":192},{"id":540,"loader":"requests","status_code":null,"text_in_response":false,"response":null,"timestamp":"2018-11-21T06:04:47.224435Z","error":"Invalid
+        URL ''lkjlkj'': No schema supplied. Perhaps you meant http://lkjlkj?","search":192},{"id":541,"loader":"splash","status_code":null,"text_in_response":false,"response":null,"timestamp":"2018-11-21T06:04:47.433108Z","error":"Invalid
+        URL ''lkjlkj'': No schema supplied. Perhaps you meant http://lkjlkj?","search":192}],"text_to_find":"Building","url":"lkjlkj","timestamp":"2018-11-21T06:04:45.404973Z"}'}
+    headers:
+      Allow: ['GET, HEAD, OPTIONS']
+      Content-Length: ['1014']
+      Content-Type: [application/json]
+      Date: ['Wed, 21 Nov 2018 06:04:47 GMT']
+      Server: [WSGIServer/0.2 CPython/3.6.6]
+      Vary: [Accept]
+      X-Frame-Options: [SAMEORIGIN]
+    status: {code: 200, message: OK}
+version: 1

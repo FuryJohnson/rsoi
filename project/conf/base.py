@@ -81,7 +81,7 @@ REST_FRAMEWORK = {
     ),
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
-    )
+    ),
 }
 
 
@@ -170,3 +170,9 @@ try:
     from local_settings import *
 except ImportError:
     pass
+
+CORS_ORIGIN_WHITELIST = (
+    "127.0.0.1:8000", "localhost:3000")
+
+STUDENTS = 'http://127.0.0.1:8000'
+UNIVERCITY = 'http://127.0.0.1:8005'

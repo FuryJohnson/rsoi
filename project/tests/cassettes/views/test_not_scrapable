@@ -1,0 +1,147 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.20.1]
+    method: GET
+    uri: http://127.0.0.1:8010/api/v1/scrapetest/?text_to_find=Building&url=https://streeteasy.com/building/32-east-1st-street/4e?featured=1
+  response:
+    body: {string: '{"id":193,"results":[{"id":542,"loader":"selenium","status_code":200,"text_in_response":false,"response":"<html
+        xmlns=\"http://www.w3.org/1999/xhtml\"><head>\n    <style type=\"text/css\">\n    input[type=\"submit\"]
+        {\n        margin: 43px 0 74px;\n        padding: 10px 16px;\n        line-height:
+        1.33;\n        font-size: 14px;\n        font-weight: 400;\n        text-transform:
+        uppercase;\n        color: #FFF;\n        background: #555;\n        border:
+        solid #555;\n        border-width: 0 0 2px 0;\n        border-radius: 2px;\n        transition:
+        all 200ms;\n    }\n        table table {\n      width: 600px !important;\n    }\n    table
+        div { /* logo */\n      width: 100%;\n      float: none;\n      text-align:
+        center;\n    }\n    table div + div { /* main content */\n      width: 100%;\n      float:
+        left;\n      text-align: left;\n    }\n    table div + div + div { /* trace
+        */\n      width: 100%;\n      float: left;\n      text-align: left;\n    }\n    table
+        div + div + div + div { /* footer */\n      width: 100%;\n      float: none;\n      clear:
+        both;\n      text-align: left;\n    }\n    @media (max-width: 630px) {\n      table
+        table {\n        width: 96% !important;\n      }\n      table div {\n        float:
+        none !important;\n        width: 100% !important;\n      }\n    }\n    input[type=\"submit\"]
+        {\n    margin: 43px 0 74px;\n    padding: 10px 16px;\n    line-height: 1.33;\n    font-size:
+        14px;\n    font-weight: 400;\n    text-transform: uppercase;\n    color: #FFF;\n    background:
+        #555;\n    border: solid #555;\n    border-width: 0 0 2px 0;\n    border-radius:
+        2px;\n    transition: all 200ms;\n}\n    </style>\n  </head>\n  <body background=\"\"
+        style=\"margin: 0; padding: 0; font-family:Arial,FreeSans,sans-serif\">\n    <table
+        cellpadding=\"0\" cellspacing=\"0\" style=\"width: 100%; margin-top: 10px;
+        margin-left: 0\"><tbody><tr><td style=\"padding: 12px 2%;\">\n      <table
+        cellpadding=\"0\" cellspacing=\"0\" style=\"margin: 0 auto; width: 96%;\"><tbody><tr><td
+        style=\"padding: 12px 2%;\">\n      <div><img src=\"http://streeteasy-public.s3.amazonaws.com/StreetEasy_logo_blue.png\"
+        width=\"450px\" /><br /><br /></div>\n      <div>\n        <h2 style=\"margin-top:
+        0;\">Pardon Our Interruption</h2>\n        <p>As you were browsing, something
+        about your browser\n        made us think you were a bot. There are a few
+        reasons why this might happen:</p>\n          <ul>\n        <li>You''re a
+        power user moving through this website with super-human speed</li>\n        <li>You''ve
+        disabled JavaScript in your web browser</li>\n        <li>A third-party browser
+        plugin, such as Ghostery or NoScript, is preventing JavaScript from running.\n          Additional
+        information is available in this <a href=\"http://ds.tl/help-third-party-plugins\"
+        title=\"Third party browser plugins that block javascript\" target=\"_blank\">support
+        article.</a></li>\n      </ul>\n      <p>After completing the CAPTCHA below,
+        you will immediately regain access to the site.</p>\n      </div>\n        <div
+        style=\"font-size: 75%\">\n                      <script type=\"text/javascript\"
+        async=\"\" src=\"https://www.gstatic.com/recaptcha/api2/v1542004393985/recaptcha__en.js\"></script><script
+        type=\"text/javascript\">\n                var distilRequestMethod = \"GET\";\n                var
+        distilSafariNumberStepsBack = 1;\n\n                var distilCallbackGuard
+        = function(callbackName) {\n                    return function() {\n                        if
+        (typeof(window[callbackName]) === ''function'') {\n                            return
+        window[callbackName].apply(null, arguments)\n                        } else
+        {\n                            document.getElementById(''dCF_input_complete'').style.display
+        = ''inline''\n                        }\n                    }\n                }\n            </script>\n            <script
+        type=\"text/javascript\" src=\"/distil_r_captcha.util.js\"></script>\n            <form
+        id=\"distilCaptchaForm\" class=\"recaptcha2\" action=\"/distil_r_captcha.html?requestId=c1c25073-d2f4-4b03-b7fb-525ac3d6bac9&amp;httpReferrer=%2Fbuilding%2F32-east-1st-street%2F4e%3Ffeatured%3D1\"
+        method=\"post\">\n                <input id=\"dCF_ticket\" name=\"dCF_ticket\"
+        type=\"hidden\" value=\"1.0&amp;Z0c44oKbbx34+r7SYKGaN9A2RtW3ZGoyaEvl/zy8Cp+M/A1TdC8Y3cipHklxbA5djFRmog09cfTX4cmOn5rPyYEmBN0AsIV72yzjSHVbH9+qKs89Pk9QCPhwsy+uv16rRDqw0Z69ImId+8NblkjUVoNj3b/YqClj6lepj41qthc=\"
+        />\n                        <div id=\"dCF_input\" class=\"g-recaptcha\" data-sitekey=\"6LdC3UgUAAAAAJIcyA3Ym4j_nCP-ainSgf1NoFku\"><div
+        style=\"width: 304px; height: 78px;\"><div><iframe src=\"https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdC3UgUAAAAAJIcyA3Ym4j_nCP-ainSgf1NoFku&amp;co=aHR0cHM6Ly9zdHJlZXRlYXN5LmNvbTo0NDM.&amp;hl=en&amp;v=v1542004393985&amp;size=normal&amp;cb=41jble5et0nx\"
+        width=\"304\" height=\"78\" role=\"presentation\" name=\"a-b33ra5gl4vgt\"
+        frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms allow-popups allow-same-origin
+        allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox\"></iframe></div><textarea
+        id=\"g-recaptcha-response\" name=\"g-recaptcha-response\" class=\"g-recaptcha-response\"
+        style=\"width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193);
+        margin: 10px 25px; padding: 0px; resize: none; display: none;\"></textarea></div></div>\n                <noscript>\n                    &lt;div&gt;\n                        &lt;div
+        style=\"width: 302px; height: 422px; position: relative;\"&gt;\n                            &lt;div
+        style=\"width: 302px; height: 422px; position: absolute;\"&gt;\n                                &lt;iframe
+        src=\"https://www.google.com/recaptcha/api/fallback?k=6LdC3UgUAAAAAJIcyA3Ym4j_nCP-ainSgf1NoFku\"\n                                    frameborder=\"0\"
+        scrolling=\"no\"\n                                    style=\"width: 302px;
+        height:422px; border-style: none;\"&gt;\n                                &lt;/iframe&gt;\n                            &lt;/div&gt;\n                        &lt;/div&gt;\n                        &lt;div
+        style=\"width: 300px; height: 60px; border-style: none; bottom: 12px; left:
+        25px; margin: 0px; padding: 0px; right: 25px; background: #f9f9f9; border:
+        1px solid #c1c1c1; border-radius: 3px;\"&gt;\n                            &lt;textarea
+        id=\"g-recaptcha-response\"\n                                name=\"g-recaptcha-response\"\n                                class=\"g-recaptcha-response\"\n                                style=\"width:
+        250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding:
+        0px; resize: none;\" &gt;\n                            &lt;/textarea&gt;\n                        &lt;/div&gt;\n                    &lt;/div&gt;\n                </noscript>\n                <br
+        />\n                <input type=\"hidden\" name=\"remoteip\" value=\"195.19.49.233\"
+        />\n                <script type=\"text/javascript\">\n                    var
+        distilRecaptchaOnloadCallback = function() {\n                        grecaptcha.render(\"dCF_input\",
+        {\n                            sitekey: \"6LdC3UgUAAAAAJIcyA3Ym4j_nCP-ainSgf1NoFku\",\n                            callback:
+        distilCallbackGuard(''distilCaptchaDoneCallback'')\n                        })\n                    }\n                </script>\n                <script
+        src=\"https://www.google.com/recaptcha/api.js?onload=distilRecaptchaOnloadCallback&amp;render=explicit\"
+        async=\"\" defer=\"\">\n                </script>\n                            <div
+        id=\"dCF_complete\">\n                    <input id=\"dCF_input_complete\"
+        type=\"submit\" value=\"Complete Captcha\" style=\"display: none;\" />\n                </div>\n                <div
+        id=\"dCF_captcha_text\">\n                    You reached this page when attempting
+        to access https://streeteasy.com/building/32-east-1st-street/4e?featured=1
+        from 195.19.49.233 on 2018-11-21 06:04:49 UTC.<br />\n                    Trace:
+        c1c25073-d2f4-4b03-b7fb-525ac3d6bac9 via 21c0c132-e0f4-4b84-b127-dc060cc92d0a\n                </div>\n            </form>\n        \n        </div>\n          <div
+        style=\"border-top: solid 1px #ccc;\">\n\n        <p style=\"font-size: 75%\">Contact
+        us for assistance at <a href=\"mailto:support@streeteasy.com\">support@streeteasy.com</a></p>\n      </div>\n      </td></tr></tbody></table>\n    </td></tr></tbody></table>\n  <script
+        type=\"text/javascript\" id=\"d__inj\" class=\"d__inj_delayed\" src=\"/dstlstrt.js\"
+        defer=\"\"></script><style type=\"text/css\">#d__fFH{position:absolute;top:-5000px;left:-5000px}#d__fF{font-family:serif;font-size:200px;visibility:hidden}#ubbfccwz{display:none!important}</style>\n\n<iframe
+        style=\"display: none;\"></iframe><div id=\"d__fFH\" style=\"position: absolute;
+        top: -5000px; left: -5000px;\"><object id=\"d_dlg\" classid=\"clsid:3050f819-98b5-11cf-bb82-00aa00bdce0b\"
+        width=\"0px\" height=\"0px\"></object><span id=\"d__fF\" style=\"font-family:
+        Courier, serif; font-size: 72px; visibility: hidden;\">The quick brown fox
+        jumps over the lazy dog.</span></div><div style=\"background-color: rgb(255,
+        255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0,
+        0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s,
+        opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000;
+        left: 0px; top: -10000px;\"><div style=\"width: 100%; height: 100%; position:
+        fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255,
+        255, 255); opacity: 0.05;\"></div><div class=\"g-recaptcha-bubble-arrow\"
+        style=\"border: 11px solid transparent; width: 0px; height: 0px; position:
+        absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;\"></div><div
+        class=\"g-recaptcha-bubble-arrow\" style=\"border: 10px solid transparent;
+        width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top:
+        -10px; z-index: 2000000000;\"></div><div style=\"z-index: 2000000000; position:
+        relative;\"><iframe title=\"recaptcha challenge\" src=\"https://www.google.com/recaptcha/api2/bframe?hl=en&amp;v=v1542004393985&amp;k=6LdC3UgUAAAAAJIcyA3Ym4j_nCP-ainSgf1NoFku&amp;cb=ilb098o7iodz\"
+        name=\"c-b33ra5gl4vgt\" frameborder=\"0\" scrolling=\"no\" sandbox=\"allow-forms
+        allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals
+        allow-popups-to-escape-sandbox\" style=\"width: 100%; height: 100%;\"></iframe></div></div></body></html>","timestamp":"2018-11-21T06:04:51.596481Z","error":null,"search":193},{"id":543,"loader":"requests","status_code":200,"text_in_response":false,"response":"<!DOCTYPE
+        html>\n<html>\n\n<head>\n<META NAME=\"ROBOTS\" CONTENT=\"NOINDEX, NOFOLLOW\">\n<meta
+        http-equiv=\"cache-control\" content=\"max-age=0\" />\n<meta http-equiv=\"cache-control\"
+        content=\"no-cache\" />\n<meta http-equiv=\"expires\" content=\"0\" />\n<meta
+        http-equiv=\"expires\" content=\"Tue, 01 Jan 1980 1:00:00 GMT\" />\n<meta
+        http-equiv=\"pragma\" content=\"no-cache\" />\n<meta http-equiv=\"refresh\"
+        content=\"10; url=/distil_r_captcha.html?requestId=b80b2d9a-7a31-4a56-ab07-b6594136d482&httpReferrer=%2Fbuilding%2F32-east-1st-street%2F4e%3Ffeatured%3D1\"
+        />\n<script type=\"text/javascript\">\n\t(function(window){\n\t\ttry {\n\t\t\tif
+        (typeof sessionStorage !== ''undefined''){\n\t\t\t\tsessionStorage.setItem(''distil_referrer'',
+        document.referrer);\n\t\t\t}\n\t\t} catch (e){}\n\t})(window);\n</script>\n<script
+        type=\"text/javascript\" src=\"/dstlstrt.js\" defer></script><style type=\"text/css\">#d__fFH{position:absolute;top:-5000px;left:-5000px}#d__fF{font-family:serif;font-size:200px;visibility:hidden}#ubbfccwz{display:none!important}</style></head>\n<body>\n<div
+        id=\"distilIdentificationBlock\">&nbsp;</div>\n</body>\n</html>\n","timestamp":"2018-11-21T06:04:52.537125Z","error":null,"search":193},{"id":544,"loader":"splash","status_code":200,"text_in_response":false,"response":"<!DOCTYPE
+        html>\n<html>\n\n<head>\n<META NAME=\"ROBOTS\" CONTENT=\"NOINDEX, NOFOLLOW\">\n<meta
+        http-equiv=\"cache-control\" content=\"max-age=0\" />\n<meta http-equiv=\"cache-control\"
+        content=\"no-cache\" />\n<meta http-equiv=\"expires\" content=\"0\" />\n<meta
+        http-equiv=\"expires\" content=\"Tue, 01 Jan 1980 1:00:00 GMT\" />\n<meta
+        http-equiv=\"pragma\" content=\"no-cache\" />\n<meta http-equiv=\"refresh\"
+        content=\"10; url=/distil_r_captcha.html?requestId=b16ceb13-f3c4-4100-80d1-b36fcfb51dbb&httpReferrer=%2Fbuilding%2F32-east-1st-street%2F4e%3Ffeatured%3D1\"
+        />\n<script type=\"text/javascript\">\n\t(function(window){\n\t\ttry {\n\t\t\tif
+        (typeof sessionStorage !== ''undefined''){\n\t\t\t\tsessionStorage.setItem(''distil_referrer'',
+        document.referrer);\n\t\t\t}\n\t\t} catch (e){}\n\t})(window);\n</script>\n<script
+        type=\"text/javascript\" src=\"/dstlstrt.js\" defer></script><style type=\"text/css\">#d__fFH{position:absolute;top:-5000px;left:-5000px}#d__fF{font-family:serif;font-size:200px;visibility:hidden}#ubbfccwz{display:none!important}</style></head>\n<body>\n<div
+        id=\"distilIdentificationBlock\">&nbsp;</div>\n</body>\n</html>\n","timestamp":"2018-11-21T06:04:53.338437Z","error":null,"search":193}],"text_to_find":"Building","url":"https://streeteasy.com/building/32-east-1st-street/4e?featured=1","timestamp":"2018-11-21T06:04:47.732550Z"}'}
+    headers:
+      Allow: ['GET, HEAD, OPTIONS']
+      Content-Length: ['13246']
+      Content-Type: [application/json]
+      Date: ['Wed, 21 Nov 2018 06:04:53 GMT']
+      Server: [WSGIServer/0.2 CPython/3.6.6]
+      Vary: [Accept]
+      X-Frame-Options: [SAMEORIGIN]
+    status: {code: 200, message: OK}
+version: 1

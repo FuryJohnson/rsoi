@@ -1,0 +1,42 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8']
+      Accept-Encoding: ['gzip, deflate, sdch']
+      Accept-Language: ['en-US,en;q=0.8']
+      Connection: [keep-alive]
+      Referer: ['http://www.wikipedia.org/']
+      User-Agent: ['Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36
+          (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36']
+    method: GET
+    uri: http://example.com/
+  response:
+    body:
+      string: !!binary |
+        H4sIADuBBVIAA41UQa/TMAy+71eYcgFpXfeAB1PXViBA4gIc4MIxa9zVWpOUJO02offfcdu9ruXt
+        QCu1jh1//mzHSZ5Jk/tzjVB6VWWL5PGHQmYL4Cfx5CvMPp+EqiuET0YJ0kk0aBfDFoVeQF4K69Cn
+        QeOLcBNAlE2Mpfd1iL8batPgo9EetQ+7sAHkwyoNPJ581IXfjlC3kLRQmAYt4bE21k/8jyR9mUps
+        KcewXyyBNHkSVehyUWF6d4Vy/szJdAwugXPngsG2M/IMf3qxX4r8sLem0TLMTWVsDM+LNb+vtuMW
+        JeyedAzrq6oWUpLez3QFMw0Loag6xxB8r1HDD6FdsITgC1YtesoFfMMGWTMqlvDBcgZLcLw1dGip
+        uCL2wkP/ldROSPfpx/B2va5PT3neowLReHOD7v3M4VbuxST+zliJNrRCUuNiuEO1nVAScUX6sOR/
+        S448ygnBR7jXmzebzQSx60UoMTdWeDLMVRuNU9D3CiUJeKHEKbxk+a7L8uW0ZfMO/k8mD6M0L+Sk
+        mPOKzfp+w/ZPadZz61jvsWRXEsM3ifojmnXyIomGeVwkXWo8nkzycpDLuyejyarBVmc/S3Igez2w
+        hM6LXUWu5F54AzuExrFYGAtUVY3zXdVbBBwQHc8Pe+eN4gFzK/hlGs753DmBZ+Th4F3Q9dXrSL40
+        jYfaEiPnhktBuu8n8Fq4A6feB63RKnKODaskqkfWCd8XFos06G6NOIqOx+OKhBYrY/fREM9Fl2hB
+        9tVY5PCMp/oYqxWDiawHTKK+Ukl0qVs0XG9/AQiVqov2BAAA
+    headers:
+      Accept-Ranges: [bytes]
+      Cache-Control: [max-age=604800]
+      Content-Encoding: [gzip]
+      Content-Length: ['606']
+      Content-Type: [text/html; charset=UTF-8]
+      Date: ['Sat, 10 Nov 2018 17:57:12 GMT']
+      Etag: ['"1541025663+ident"']
+      Expires: ['Sat, 17 Nov 2018 17:57:12 GMT']
+      Last-Modified: ['Fri, 09 Aug 2013 23:54:35 GMT']
+      Server: [ECS (lga/13B1)]
+      Vary: [Accept-Encoding]
+      X-Cache: [HIT]
+    status: {code: 200, message: OK}
+version: 1
