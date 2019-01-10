@@ -28,10 +28,4 @@ cd frontend
 npm install
 npm run build dev
 ```
-
-Tests
-```
-python project/test .
-```
-
 Enjoy!
