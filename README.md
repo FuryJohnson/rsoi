@@ -23,8 +23,3 @@ python project/manage.py runserver
 
 then - add to adress input - /api/ 
 ```
-
-Tests
-```
-python project/test .
-```
